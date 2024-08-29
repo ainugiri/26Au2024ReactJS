@@ -4,6 +4,9 @@ import UserProfile from './Components/UserProfile';
 import Products from './Components/Products';
 import EmployeeDetails from './Components/EmployeeDetails'; 
 import Kart from './Components/Kart';
+import CountersX from './Components/CountersX'; 
+import Likes from './Components/Likes';
+import CountersY from './Components/CountersY';
 
 function App() {
   const userProfile = 
@@ -18,6 +21,10 @@ function App() {
       <section className="Section-header">
         <h2>React</h2>
       </section>
+      <CountersY likes={102} />
+      <hr />
+      <Likes /> 
+      <CountersX val={20} />
       
       {userProfile.map((user, index) => (
         <UserProfile key={index} name={user.name} age={user.age} city={user.city} occupation={user.occupation} />
