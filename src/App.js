@@ -9,6 +9,7 @@ import Likes from './Components/Likes';
 import CountersY from './Components/CountersY';
 import SimpleForm from './Components/SimpleForm';
 import TaskPlanner from './Components/TaskPlanner';
+import Remainders from './Components/Remainders';
 
 function App() {
   const userProfile = 
@@ -25,7 +26,7 @@ function App() {
       </section>
 
       <br />
-      <TaskPlanner />
+      <Remainders />
       <br />
       
       <hr />      
