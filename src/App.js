@@ -7,6 +7,7 @@ import Kart from './Components/Kart';
 import CountersX from './Components/CountersX'; 
 import Likes from './Components/Likes';
 import CountersY from './Components/CountersY';
+import SimpleForm from './Components/SimpleForm';
 
 function App() {
   const userProfile = 
@@ -21,6 +22,10 @@ function App() {
       <section className="Section-header">
         <h2>React</h2>
       </section>
+      <hr />
+      <SimpleForm />
+      <hr />      
+
       <CountersY likes={102} />
       <hr />
       <Likes /> 
