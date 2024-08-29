@@ -16,8 +16,18 @@
 .Expenses-item {
     background-color: #ff3300;
     color: #ffffff;
+    padding: auto;
+    margin: auto;
+}
+input[type="text"] {
+    background-color: yellow;
+    color: black;
 }
 
+input[type="number"] {
+    background-color: #ffffff;
+    color: #ff6600;
+}
 .Expenses-total {
     background-color: #ff9900;
     color: #ffffff;

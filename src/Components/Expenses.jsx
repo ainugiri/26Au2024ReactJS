@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Expenses.css';
 
+
 const Expenses = () => {
     const [expenses, setExpenses] = useState([]);
     const [itemName, setItemName] = useState('');
