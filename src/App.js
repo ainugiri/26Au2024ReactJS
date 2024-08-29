@@ -10,7 +10,7 @@ import CountersY from './Components/CountersY';
 import SimpleForm from './Components/SimpleForm';
 import TaskPlanner from './Components/TaskPlanner';
 import Remainders from './Components/Remainders';
-
+import Expenses from './Components/Expenses';
 function App() {
   const userProfile = 
       [{name: 'Giri', age: 25, city: 'New York', occupation: 'Developer'},
@@ -28,7 +28,8 @@ function App() {
       <br />
       <Remainders />
       <br />
-      
+      <Expenses />
+      <br />
       <hr />      
 
       <CountersY likes={102} />

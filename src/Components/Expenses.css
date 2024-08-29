@@ -1,0 +1,24 @@
+.Expenses {
+    background-color: #ffcc00;
+    color: #ffffff;
+}
+
+.Expenses-header {
+    background-color: #ff6600;
+    color: #ffffff;
+}
+
+.Expenses-list {
+    background-color: #ff9933;
+    color: #ffffff;
+}
+
+.Expenses-item {
+    background-color: #ff3300;
+    color: #ffffff;
+}
+
+.Expenses-total {
+    background-color: #ff9900;
+    color: #ffffff;
+}
