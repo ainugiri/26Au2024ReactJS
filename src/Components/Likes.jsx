@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 function Likes(){
 
@@ -7,7 +7,9 @@ function Likes(){
     const onIncrement = () => {
         setLikes(likes + 1);
     }   
-
+    useEffect(() => {
+        document.title = `Likes (${likes})`;
+    }, [likes]);
 
     return (
         <div>

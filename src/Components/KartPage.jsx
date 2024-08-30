@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, createContext } from 'react';
 import './KartPage.css';
 const KartPage = () => {
     const [items, setItems] = useState([]);
@@ -82,6 +82,7 @@ const KartPage = () => {
                 <span>Total: {calculateTotal()}</span>
             </div>
         </div>
+
     );
 };
 

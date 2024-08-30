@@ -1,4 +1,6 @@
+import DisplayUser from './Components/DisplayUser';
 import logo from './logo.svg';
+import Result from './Components/Result'; 
 import './App.css';
 import ListUsers from './Components/ListUsers';
 import UserProfile from './Components/UserProfile';
@@ -14,6 +16,7 @@ import Expenses from './Components/Expenses';
 import KartPage from './Components/KartPage';
 import TaskList from './TaskList';
 import Remainders from './Components/Remainders';
+import { UserProvider } from './Components/UserContext';
 function App() {
   const userProfile = 
       [{name: 'Giri', age: 25, city: 'New York', occupation: 'Developer'},
@@ -28,6 +31,10 @@ function App() {
         <h2>React</h2>
       </section>
       <br />
+      <UserProvider >
+        <DisplayUser />
+      </UserProvider>
+
       <ListUsers />
       <Remainders /> 
       <TaskList />
