@@ -9,9 +9,9 @@ import Likes from './Components/Likes';
 import CountersY from './Components/CountersY';
 import SimpleForm from './Components/SimpleForm';
 import TaskPlanner from './Components/TaskPlanner';
-import Remainders from './Components/Remainders';
 import Expenses from './Components/Expenses';
 import KartPage from './Components/KartPage';
+import TaskList from './TaskList';
 function App() {
   const userProfile = 
       [{name: 'Giri', age: 25, city: 'New York', occupation: 'Developer'},
@@ -26,13 +26,12 @@ function App() {
         <h2>React</h2>
       </section>
       <br />
+      <TaskList />
       <br />
-      <KartPage />
+        <KartPage />
       <br />
       
 
-      <br />
-      <Remainders />
       <br />
       <Expenses />
       <br />

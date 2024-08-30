@@ -65,9 +65,9 @@ const KartPage = () => {
             <div className="item-list">
                 {items.map((item, index) => (
                     <div key={index} className="item">
-                        <span>{item.itemName}</span>
-                        <span>{item.qty}</span>
-                        <span>{item.price}</span>
+                        <span>{item.itemName}    </span>
+                        <span>{item.qty}    </span>
+                        <span>{item.price}    </span>
                         <button onClick={() => deleteItem(index)}>Delete</button>
                         <button onClick={() => modifyItem(index, 'qty', parseInt(prompt('Enter new quantity:')))}>Modify Qty</button>
                         <button onClick={() => modifyItem(index, 'price', parseFloat(prompt('Enter new price:')))}>Modify Price</button>
