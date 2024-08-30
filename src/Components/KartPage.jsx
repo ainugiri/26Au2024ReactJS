@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './KartPage.css';
 const KartPage = () => {
     const [items, setItems] = useState([]);
     const [itemName, setItemName] = useState('');
     const [qty, setQty] = useState(0);
     const [price, setPrice] = useState(0);
+
+    useEffect(() => {
+        document.title = `Kart (${items.length})`;
+    }, [items]);
 
     const addItem = () => {
         const newItem = {
